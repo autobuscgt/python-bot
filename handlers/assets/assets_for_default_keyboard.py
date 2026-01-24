@@ -1,0 +1,7 @@
+start = "start"
+settings = "⚙️ Настройки"
+schedule = "📅 Расписание"
+grades = "📊 Оценки"
+homework = "📚 Домашнее задание"
+help = "ℹ️ Помощь"
+backward = "↩️ Назад"
