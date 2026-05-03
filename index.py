@@ -1,13 +1,18 @@
 import asyncio  
 import logging 
+import os
 from aiogram import Bot, Dispatcher
+from dotenv import load_dotenv
+
 
 from handlers import subjects,notes,schedule,default_handlers
 from config import token
 
 logging.basicConfig(level=logging.INFO)
 
-API_TOKEN = token
+load_dotenv()
+
+API_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 async def main():
     bot = Bot(token=API_TOKEN)
